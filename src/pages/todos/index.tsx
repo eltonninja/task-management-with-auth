@@ -38,9 +38,9 @@ export default function TodoListPage() {
   return (
     <AuthLayout>
       <div className='todo-list-container'>
-        <Text component='h2' className='text-2xl font-bold my-2 text-center'>Todo List</Text>
+        <Text component='h2' className='text-2xl font-bold my-2 text-center text-blue-500'>Todo List</Text>
         <div className='flex justify-end py-2'>
-          <Button onClick={handleNew}>New Task</Button>
+          <Button onClick={handleNew}>+ New Task</Button>
         </div>
         {!data?.length ? (
           <Text>No data</Text>

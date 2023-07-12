@@ -13,11 +13,11 @@ export const AuthLayout = ({ children }: PropsWithChildren) => {
   }
 
   return (
-    <div className='flex flex-col w-full h-screen px-2'>
-      <nav className='flex flex-row justify-end py-2'>
-        <Button onClick={handleSignout} variant='link'>Sign out</Button>
+    <div className='flex flex-col w-full h-screen px-2 bg-blue-500'>
+      <nav className='flex flex-row justify-end py-2 fixed right-4'>
+        <Button onClick={handleSignout} variant='link' className='bg-white rounded-sm'>Sign out</Button>
       </nav>
-      <div className='container container-md mx-auto'>
+      <div className='container container-md w-1/2 my-40 mx-auto bg-white shadow-md rounded-md p-8'>
         <AuthGuard>
           {children}
         </AuthGuard>

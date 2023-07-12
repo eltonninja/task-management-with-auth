@@ -69,26 +69,29 @@ export const EditTaskForm = ({ onSubmit, onBack, onDelete }: EditTaskFormProps) 
       <div className='flex justify-start'>
         {!!onBack && <Button onClick={onBack} variant='link'>Back</Button>}
       </div>
-      <Text component='h2' className='text-2xl font-bold my-2 text-center'>
+      <Text component='h2' className='text-2xl font-bold my-4 text-center text-blue-500'>
         {data ? 'Update a task' : 'Create a task'}
       </Text>
-      <form onSubmit={formik.handleSubmit} className='w-[480px] mx-auto mt-8'>
+      <form onSubmit={formik.handleSubmit} className='w-full sm:w-3/4 mx-auto mt-8'>
+        
+        <Text>Task title</Text>
         <TextInput
           placeholder='Title'
           name='title'
           value={formik.values.title}
           onChange={formik.handleChange}
           error={formik.errors.title}
-          className='w-full my-2'
+          className='w-full block p-3 border rounded border-gray-300'
         />
 
+        <Text>Task description</Text>
         <TextInput
           placeholder='Description'
           name='description'
           value={formik.values.description}
           onChange={formik.handleChange}
           error={formik.errors.description}
-          className='w-full my-1'
+          className='w-full block p-3 border rounded border-gray-300 my-4'
         />
 
         <Text>Priority</Text>
@@ -96,7 +99,7 @@ export const EditTaskForm = ({ onSubmit, onBack, onDelete }: EditTaskFormProps) 
           name='priority'
           value={formik.values.priority}
           onChange={formik.handleChange}
-          className='w-full my-1'
+          className='w-full block border rounded border-gray-300 my-2'
           options={priorityOptions}
         />
 
@@ -105,7 +108,7 @@ export const EditTaskForm = ({ onSubmit, onBack, onDelete }: EditTaskFormProps) 
           name='status'
           value={formik.values.status}
           onChange={formik.handleChange}
-          className='w-full my-1'
+          className='w-full block border rounded border-gray-300 my-2'
           options={statusOptions}
         />
 

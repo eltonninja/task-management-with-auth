@@ -45,8 +45,8 @@ const AuthForm = ({ isSignUp = false }: AuthFormType) => {
   })
 
   return (
-    <div className='w-[480px] mt-40'>
-      <Text component='h2' className='text-2xl text-center my-8'>{isSignUp ? 'Sign Up' : 'Login'}</Text>
+    <div className='w-[480px] my-40 mx-auto bg-white shadow-md rounded-md p-8'>
+      <Text component='h2' className='text-2xl text-center font-bold my-8'>{isSignUp ? 'Sign Up' : 'Login'}</Text>
       <form onSubmit={formik.handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
         <TextInput
           type='email'
@@ -78,7 +78,7 @@ const AuthForm = ({ isSignUp = false }: AuthFormType) => {
         {!!error && <Text className='text-xs text-red-600'>{error}</Text>}
 
         <div className='flex justify-center'>
-          <Button type='submit' className='px-4 my-4 inline-flex items-center'>
+          <Button type='submit' className='w-full py-2 text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700 transition-colors duration-200 rounded flex justify-center'>
             {isSignUp ? 'Sign Up' : 'Login'}
             {loading && <Spinner />}
           </Button>

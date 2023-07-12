@@ -29,6 +29,9 @@ export const TodoItem = ({ index, todo, onSelect }: TodoItemProps) => {
       <TableCell align='center'>
         <Text className='px-2 py-1'>{todo.priority}</Text>
       </TableCell>
+      <TableCell align='center'>
+        <Text className='px-2 py-1'>{todo.status}</Text>
+      </TableCell>
     </TableRow>
   );
 }
