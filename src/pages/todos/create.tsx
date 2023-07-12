@@ -17,6 +17,7 @@ export default function CreateTaskPage() {
     if (data) {
       setTimeout(() => router.replace('/todos'), 1000);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data])
 
   const handleSubmit = async (values: Omit<TodoInfo, 'id'>) => {

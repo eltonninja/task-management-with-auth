@@ -17,7 +17,7 @@ export const AuthLayout = ({ children }: PropsWithChildren) => {
       <nav className='flex flex-row justify-end py-2 fixed right-4'>
         <Button onClick={handleSignout} variant='link' className='bg-white rounded-sm'>Sign out</Button>
       </nav>
-      <div className='container container-md w-1/2 my-40 mx-auto bg-white shadow-md rounded-md p-8'>
+      <div className='container container-md w-1/2 my-20 mx-auto bg-white shadow-md rounded-md p-8'>
         <AuthGuard>
           {children}
         </AuthGuard>

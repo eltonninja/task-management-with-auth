@@ -15,7 +15,7 @@ export const TextInput = ({ error = '', multiline = false, className, ...others 
     <div className='my-2 w-full'>
       <Component {...others} className={`${classes} ${className}`} />
 
-      {!!error && <Text className='text-xs text-red-600'>{error}</Text>}
+      {!!error && <Text className='text-xs text-red-600 p-1'>{error}</Text>}
     </div>
   );
 }

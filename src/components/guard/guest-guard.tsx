@@ -12,6 +12,7 @@ export const GuestGuard = ({ children }: PropsWithChildren) => {
     if (user) {
       router.push('/todos');
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   return !user ? children : null;

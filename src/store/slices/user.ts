@@ -44,9 +44,9 @@ export const userSlice = createSlice({
       state.loading = true;
       state.error = '';
     });
-    builder.addCase(signUp.fulfilled, (state) => {
-      state.user = null;
-      state.accessToken = '';
+    builder.addCase(signUp.fulfilled, (state, { payload }) => {
+      state.user = payload.user;
+      state.accessToken = payload.accessToken;
       state.loading = false;
     });
     builder.addCase(signUp.rejected, (state, { payload }) => {

@@ -12,6 +12,7 @@ export const AuthGuard = ({ children }: PropsWithChildren) => {
     if (!user) {
       router.push('/auth/signin');
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   return user ? children : null;

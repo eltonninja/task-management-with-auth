@@ -15,6 +15,7 @@ export default function EditTaskPage() {
 
   useEffect(() => {
     dispatch(getDetail({ id }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
   const handleSubmit = (values: Omit<TodoInfo, 'id'>) => {
