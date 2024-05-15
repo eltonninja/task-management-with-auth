@@ -21,8 +21,8 @@ Before you start, ensure you have Node.js and npm installed on your machine.
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/eltonninja/todo-list.git
-cd todo-list
+git clone https://github.com/eltonninja/task-management-with-auth.git
+cd task-management-with-auth
 ```
 
 2. Install dependencies:
