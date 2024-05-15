@@ -1,11 +1,11 @@
 # Simple Task Management List With Authentication
 
-This project is a simple yet effective TODO list application built using React, Next.js, Redux, TypeScript, and styled with Tailwind CSS. 
+This project is a simple yet effective task management application built using React, Next.js, Redux, TypeScript, and styled with Tailwind CSS. 
 
 ## Features
 
 - User Authentication: Users can log in and out of the application, ensuring personalization and security.
-- CRUD Operations: Users can create, read, update, and delete tasks on their TODO list. 
+- CRUD Operations: Users can create, read, update, and delete tasks on their tasks. 
 
 ## Technical Stack
 
